@@ -4,6 +4,7 @@
 	<title>Safira</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="top">
@@ -61,21 +62,56 @@
 
 		<div id="top-menu">
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><a class="nav" href="#">Home</a></li>
 				<li>
-					<a href="#">Muslim Galeri</a>
+					<a class="nav" href="#">Muslim Galeri</a> <span class="bottom-arrow"></span>
 					<div class="big-menu-one">
-						HAHA
+						<div>
+							<h3>Muslim Galeri Wanita</h3>
+							<a href="#">JILBAB & KERUDUNG</a>
+							<a href="#">BLUES DAN GAMIS</a>
+							<a href="#">CELANA DAN ROK</a>
+							<a href="#">SARIMBIT</a>
+							<a href="#">CARDI & COAT</a>
+							<a href="#">BUSANA RAJUT</a>
+						</div>
+
+						<div>
+							<h3>Muslim Galeri Pria</h3>
+							<a href="#">SARIMBIT</a>
+							<a href="#">BAJU LAKI-LAKI</a>
+						</div>
+
+						<div>
+							<h3>Muslim Galeri Wanita Anak-Anak</h3>
+							<a href="#">OTHERS</a>
+							<a href="#">OTHERS</a>
+							<a href="#">OTHERS</a>
+							<a href="#">OTHERS</a>
+						</div>
+
+						<div>
+							<h3>Muslim Galeri Balita</h3>
+							<a href="#">OTHERS</a>
+							<a href="#">OTHERS</a>
+						</div>
+
+						<div>
+							<h3>Muslim Galeri Lain-Lain</h3>
+							<a href="#">OTHERS</a>
+						</div>
 					</div>
 				</li>
 				<li>
-					<a href="#">Others</a>
+					<a class="nav" href="#">Others</a> <span class="bottom-arrow"></span>
 					<div class="big-menu-one">
-						HEHE
+						<p>Hehe</p>
+						<p>Hehe</p>
+						<p>Hehe</p>
 					</div>
 				</li>
-				<li><a href="#">Peluang Bisnis Online</a></li>
-				<li><a href="#">Testimonial</a></li>
+				<li><a class="nav" href="#">Peluang Bisnis Online</a></li>
+				<li><a class="nav" href="#">Testimonial</a></li>
 			</ul>
 		</div>
 	</div>
@@ -87,5 +123,22 @@
 	<div id="bottom">
 		
 	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$('#top-menu ul li').hover(function(){
+				$('.big-menu-one')
+				.delay(1000)
+				.queue(function(next){
+					$('.big-menu-one').css('background','green');
+					next();
+				});
+			}, function(){
+				$('.big-menu-one').css('background','#ffffff')
+			});
+
+		});
+	</script>
 </body>
 </html>
