@@ -127,7 +127,7 @@ body{
 	background: url('../img/cart.png') no-repeat left center;
 	padding-left: 40px;
 	height: 34px;
-	margin-left: 80px;
+	margin-left: 70px;
 	padding-top: 10px;
 }
 
@@ -196,9 +196,10 @@ body{
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	text-shadow:none;
+	z-index: 1000;
 }
 
-#top-menu ul li:hover .big-menu-one{
+#top-menu ul li:hover .big-menu-one,#top-menu ul li:hover .big-menu-two{
 	display: block;
 	cursor: default;
 	position: absolute;
@@ -237,7 +238,7 @@ body{
 	font-size: 14px;
 }
 
-.big-menu-one a{
+.big-menu-one a, .big-menu-two a{
 	text-decoration: none;
 	display: list-item;
 	font-size: 13px;
@@ -246,7 +247,199 @@ body{
 	background: url('../img/arrow_menu.png') no-repeat left center;
 }
 
-.big-menu-one a:hover{
+.big-menu-one a:hover, .big-menu-two a:hover{
 	background: url('../img/arrow_menu_hover.png') no-repeat left center #efefef;
 	color: #d0272f;
 }
+
+.big-menu-two-container{
+	position: relative;
+}
+
+.big-menu-two{
+	background: #ffffff;
+	position: absolute;
+	top:40px;
+	left: 0px;
+	width: 209px;
+	padding: 20px 10px;
+	display: none;
+	box-shadow: 0 0 3px #B9B9B9;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	text-shadow:none;
+	z-index: 1000;
+}
+
+
+#wrapper{
+	margin: 0 auto;
+	width: 960px;
+}
+
+/* Main content top page */
+
+#top-content{
+	font-family: 'Titillium Web', sans-serif;
+}
+
+#banner > div{
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+#cat-nav{
+	width: 165px;
+}
+
+.cat-nav{
+	margin-bottom: 7px;
+}
+
+.cat-nav h3{
+	color: #d0272f;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.cat-nav a{
+	text-decoration: none;
+	display: list-item; /* reset back to vertically*/
+	list-style-type: none;
+	font-size: 11px;
+	color: black;
+	margin-bottom: 5px;
+}
+
+.cat-nav a:hover{
+	text-decoration: underline;
+}
+
+#slide{
+	width: 575px;
+	position: relative;
+}
+
+#slide img{
+	height: 380px;
+}
+
+#flag{
+	margin-left: 15px;
+}
+
+#flag img{
+	display: block;
+	margin-bottom: 12px;
+}
+
+#block{
+	background: #D0272F;
+	color: white;
+	padding: 0px 45px;
+	font-size: 30px;
+}
+
+#potrait-wrapper{
+	padding: 15px;
+}
+
+#potrait-wrapper .potrait{
+	display: inline-block;
+	margin-right: 21px;
+}
+
+.potrait img{
+	background: url('../img/stripe-bg.png') repeat;
+	padding: 10px;
+	border-radius:10px;
+	border:1px solid #cccccc;
+}
+
+#feature{
+	background: url('../img/stripe-bg.png') repeat;
+	border-radius: 10px;
+	border: 1px solid #cccccc;
+}
+
+#corner-title{
+	background: #a4b344;
+	color: #ffffff;
+	width: 150px;
+	padding-left: 20px;
+	margin-top: 10px;
+}
+
+#corner-title h3{
+	font-size: 14px;
+	font-style: italic;
+}
+
+#box-wrapper{
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #cccccc;
+	background: #ffffff;
+}
+
+#box-wrapper div.box-feature{
+	display: inline-block;
+}
+
+.box-feature{
+	width: 110px;
+	margin:0px 19px 30px;
+	text-align: center;
+}
+
+.box-feature p{
+	font-size: 12px;
+	display: auto;
+	margin-bottom: 10px;
+	padding: 0px;
+	line-height: 5px;
+}
+
+.box-feature p.brand{
+	color: #D0272F;
+}
+
+.box-feature p.product-name{
+	color: #a4b344;
+}
+
+.box-feature p.price{
+	color:#585a5d;
+	font-weight: bold;
+}
+/* Main content top page */
+
+/* Footer */
+
+#footer{
+	margin-top: 20px;
+}
+
+#red-one{
+	background: #D0272F;
+}
+
+#red-one div, #red-two div{
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+#red-one p{
+	color: #ffffff;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#red-two{
+	background: #e88085;
+}
+
+/* Footer */
