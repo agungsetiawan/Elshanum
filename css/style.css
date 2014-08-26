@@ -38,7 +38,7 @@ body{
 	padding:7px 22px;
 }
 
-#hi-user,#hi-account,#hi-logout{
+#hi-user,#hi-account,#hi-logout, #hi-login{
 	display: inline-block;
 	border-right: 1px solid #203f3d;
 	padding:7px 22px;
@@ -52,8 +52,12 @@ body{
 	background: url('../img/myaccount.png') no-repeat 5px center;
 }
 
-#hi-logout{
+#hi-logout, #hi-login{
 	background: url('../img/key.png') no-repeat 5px center;
+}
+
+#hi-login{
+	border-left: 1px solid #203f3d;
 }
 
 #top a{
@@ -64,6 +68,7 @@ body{
 #header{
 	width: 1002px;
 	margin:12px auto;
+	position: relative;
 }
 
 #header #logo, #header #search, #header #cart {
@@ -74,11 +79,11 @@ body{
 	display: inline-block;
 }
 
-#logo{
+/*#logo{
 	background: url('../img/logo.png') no-repeat left center;
 	height: 51px;
 	width: 250px;
-}
+}*/
 
 #search fieldset{
 	border-radius: 5px;
@@ -123,17 +128,24 @@ body{
 #cart{
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 12px;
-	color:#a1934d;
 	background: url('../img/cart.png') no-repeat left center;
 	padding-left: 40px;
 	height: 34px;
 	margin-left: 70px;
 	padding-top: 10px;
+	color:#a1934d;
+	text-decoration: none;
+}
+
+#cart > *{
+	display: block;
 }
 
 #ym{
-	margin-top: 25px;
-	margin-left: 6px;
+	position: absolute;
+	right: 7px;
+	/*margin-top: 25px;
+	margin-left: 6px;*/
 }
 
 #ym img{
@@ -247,6 +259,10 @@ body{
 	background: url('../img/arrow_menu.png') no-repeat left center;
 }
 
+.big-menu-two a{
+	margin-left: 10px;
+}
+
 .big-menu-one a:hover, .big-menu-two a:hover{
 	background: url('../img/arrow_menu_hover.png') no-repeat left center #efefef;
 	color: #d0272f;
@@ -261,8 +277,8 @@ body{
 	position: absolute;
 	top:40px;
 	left: 0px;
-	width: 209px;
-	padding: 20px 10px;
+	width: 100%;
+	padding: 20px 0px;
 	display: none;
 	box-shadow: 0 0 3px #B9B9B9;
 	border-bottom-right-radius: 10px;
@@ -391,6 +407,14 @@ body{
 	width: 110px;
 	margin:0px 19px 30px;
 	text-align: center;
+}
+
+.box-feature a{
+	text-decoration: none;
+}
+
+.box-feature a:hover p.product-name{
+	color: #08554F;
 }
 
 .box-feature p{
