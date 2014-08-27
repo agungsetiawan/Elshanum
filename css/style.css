@@ -519,3 +519,149 @@ a#fb-icon:hover, a#twitter-icon:hover{
 }
 
 /* Footer */
+
+/* Menu Mobile */
+
+#menu-mobile{
+	background: #D0272F;
+	padding: 5px;
+	display: none;
+}
+
+#slick{
+	float: right;
+	background: #a1934d;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#menu-mobile ul{
+	/*float: left;*/
+	width: 100%;
+	overflow: hidden;
+	height: 0;
+}
+
+#menu-mobile ul li{
+	font-family: 'Titillium Web', sans-serif;
+	padding-left: 10px;
+	list-style-type: none;
+
+}
+
+#menu-mobile ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	display: block;
+	padding:3px 10px;
+}
+
+#menu-mobile ul li a:hover{
+	background: #efefef;
+	border-radius: 5px;
+	color:#222;
+}
+
+#slick-clear{
+	clear: both;
+}
+
+/* Menu Mobile */
+
+/* Media Query */
+
+@media screen and (max-width: 768px){
+	body{
+		overflow-x: hidden;
+		width: 100%;
+	}
+
+	#banner, #gallery,#ym,#account-bar-left{
+		display: none;
+	}
+
+	#account-bar{
+		width: 100%;
+	}
+
+	#logo,#search,#cart,#menu-mobile{
+		display: block;
+	}
+
+	#header{
+		width: 100%;
+		position: relative;
+	}
+
+	#logo{
+		text-align: center;
+	}
+
+	#cart{
+		margin-top: 20px;
+		position: absolute;
+		right: 10px;
+	}
+
+	#fieldset-inner{
+		position: relative;
+	}
+
+	#header #search input[type=submit]{
+		position: absolute;
+		right: 5px;
+	}
+
+	#search input[type=text]{
+		width: 75%;
+	}
+
+	#wrapper{
+		margin-top: 80px;
+		width: 100%;
+	}
+
+	#box-wrapper{
+
+	}
+
+	.box-feature{
+		width: 100%;
+		margin: 5px;
+		padding: 10px;
+		border-bottom: 1px solid #efefef;
+		/*background: green;*/
+	}
+
+	.box-feature img{
+		width: 120px;
+	}
+
+	#red-one div{
+		width: 100%;
+	}
+
+	#red-two #footer-link-wrapper{
+		width: 100%;
+	}
+
+	#footer-link-wrapper > div{
+		display: block;
+	}
+
+	#copyright{
+		/*margin-left: 10px;*/
+		/*margin: 0 auto;*/
+	}
+
+	/*sementara*/
+	#top-menu{
+		display: none;
+	}
+}
+
+/* Media Query */

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Safira</title>
+	<title>Syafira Login</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/responsiveslides.css" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/responsiveslides.js"></script>
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 </head>
 <body>
 	<div id="top">
@@ -33,6 +35,42 @@
 				
 			</div>
 		</div>
+	</div>
+
+	<div id="menu-mobile">
+		<a href="#" id="slick">
+			Menu
+			<span id="slick-strip">
+			&#9776;
+			</span>
+		</a>
+
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li>
+				<a href="#">Muslim Galeri</a>
+				<ul style="height:0px">
+					<li><a href="#">Muslim Galeri - Wanita</a></li>
+					<li><a href="#">Muslim Galeri - Pria</a></li>
+					<li><a href="#">Muslim Galeri - Anak-Anak</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Others</a>
+				<ul>
+					<li><a href="#">Muslim Galeri - Wanita</a></li>
+					<li><a href="#">Muslim Galeri - Pria</a></li>
+					<li><a href="#">Muslim Galeri - Anak-Anak</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+		</ul>
+
+		<div id="slick-clear">
+		</div>
+
+		
 	</div>
 
 	<div id="header">
@@ -395,6 +433,14 @@
 		        namespace: "centered-btns"
 		      });
 
+			 $("#slick").click(function(){
+			 	if($("#menu-mobile ul").css("height")=="0px"){
+			 		
+			 		$("#menu-mobile ul").css("height","auto");
+			 	}else{
+			 		$("#menu-mobile ul").css("height","0px");
+			 	}
+			 });
 			// $('#top-menu ul li').hover(function(){
 			// 	$('.big-menu-one')
 			// 	.delay(1000)
