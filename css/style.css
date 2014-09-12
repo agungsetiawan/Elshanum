@@ -520,6 +520,30 @@ a#fb-icon:hover, a#twitter-icon:hover{
 
 /* Footer */
 
+
+/* Login Page */
+
+#login-box,#register-box{
+	background: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #bfbfbf;
+	display: inline-block;
+	vertical-align: top;
+	width: 450px;
+}
+
+#login-box form,#register-box form{
+	margin: 30px;
+	margin-top: 20px;
+}
+
+#login-box form input,#register-box form input{
+	width: 200px;
+}
+
+/* Login Page */
+
+
 /* Menu Mobile */
 
 #menu-mobile{
@@ -661,6 +685,10 @@ a#fb-icon:hover, a#twitter-icon:hover{
 	/*sementara*/
 	#top-menu{
 		display: none;
+	}
+
+	#login-box,#register-box{
+		width: 100%;
 	}
 }
 
